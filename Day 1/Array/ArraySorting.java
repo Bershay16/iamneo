@@ -1,3 +1,4 @@
+package Array;
 public class ArraySorting {
     public static void main(String[] args) {
         int[] arr = {20, 4, 5, 2, 40, 5, 6, 7, 8, 8, 8, 9, 9};
