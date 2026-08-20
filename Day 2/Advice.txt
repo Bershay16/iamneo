@@ -3,3 +3,4 @@ strings
 rotation, left,right, k rotations, reversal
 palindrome, angram, generate anagram, dupluacte removal, 
 missing, lcs, longest plindriomic substring.
+try alternate sorting
