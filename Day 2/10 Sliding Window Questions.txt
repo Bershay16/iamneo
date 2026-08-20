@@ -1,0 +1,135 @@
+1. Employee Access Badge Monitoring
+
+A company tracks employee badge swipes as a string of uppercase letters representing employee IDs.
+
+The security team wants to find the longest continuous period during which no employee swiped more than once.
+
+Input
+ABCADEAF
+Output
+5
+
+Explanation:
+
+BCADE
+
+
+
+2. Data Packet Verification
+
+A network monitoring system receives a stream of packet codes.
+
+The administrator wants to know whether any continuous segment contains a rearrangement of a critical pattern.
+
+Input
+Pattern : ABC
+Stream  : XYCBADZZ
+Output
+true
+
+Because:
+
+CBA
+
+is a permutation of ABC.
+
+3. Intrusion Detection System
+
+A cybersecurity team receives a log stream.
+
+They need all positions where an anagram of a suspicious keyword appears.
+
+Input
+Log     : BACDGABCDA
+Keyword : ABCD
+Output
+[0,5,6]
+4. Text Compression Analyzer
+
+A text compressor may replace at most K characters.
+
+Find the longest block that can become a single repeated character after at most K replacements.
+
+Input
+AABABBA
+K = 1
+Output
+4
+5. Customer Preference Analysis
+
+A shopping platform stores customer actions as characters.
+
+Find the longest continuous segment containing at most K different action types.
+
+Input
+AABACBE
+K = 2
+Output
+4
+
+Explanation:
+
+AABA
+6. Password Strength Checker
+
+A password is considered balanced if it contains exactly K distinct characters.
+
+Count all balanced substrings.
+
+Input
+ABCBA
+K = 2
+Output
+5
+7. Chat Moderation System
+
+A messaging platform wants the smallest message segment containing all required moderation keywords.
+
+Input
+Message : ADOBECODEBANC
+Required: ABC
+Output
+BANC
+8. DNA Sequence Analysis
+
+Researchers need the longest DNA segment where every nucleotide appears at least K times.
+
+Input
+AAABB
+K = 3
+Output
+3
+
+
+9. Advertisement Analytics
+
+A company tracks user clicks represented by letters.
+
+Find the shortest continuous segment containing all distinct click types present in the entire string.
+
+Input
+aabcbcdbca
+Output
+4
+
+Explanation:
+
+dbca
+
+https://hr.gs/popd5l3
+
+
+
+
+
+10. Secure Communication Scanner
+
+A communication channel contains encoded messages.
+
+Find the smallest substring that contains another pattern as a subsequence.
+
+Input
+abcdebdde
+bde
+Output
+bcde
