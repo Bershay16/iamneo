@@ -1,6 +1,6 @@
 # DSA Coding Problems — Topic Wise
 
-> Problems are grouped by their primary DSA topic. Names, timestamps, and unrelated message details have been removed.
+> Problems are grouped by their primary DSA topic.
 
 ---
 

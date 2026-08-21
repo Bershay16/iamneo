@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 
 class Node{
     int value;
@@ -46,7 +46,7 @@ class SLL{
                 }
                 shouldReverse = !shouldReverse;
             }else{
-                int[] arr = new int[k];
+                //int[] arr = new int[k];
             }
 
         }
