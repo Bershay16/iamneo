@@ -1,0 +1,108 @@
+1.DFS — Island Exploration System
+
+A satellite system represents a geographical area as a grid:
+
+1 → Land
+0 → Water
+
+Two land cells belong to the same island if they are connected horizontally or vertically. Diagonal connections are not considered.
+
+The system needs to determine the size of the largest island, where the size is the total number of connected land cells.
+
+Use DFS to explore each island and find the largest one.
+
+Input Format
+
+First line contains two integers m and n, representing rows and columns.
+Next m lines contain m × n binary values.
+
+Output Format
+
+Print the size of the largest island.
+
+Example
+
+Input:
+5 6
+1 1 0 0 0 1
+1 0 0 1 1 1
+0 0 0 1 0 0
+1 1 0 0 0 0
+1 1 1 0 1 1
+
+
+Output:
+5
+
+2.BFS — Campus Building Navigation
+
+A university campus is represented as a matrix where each cell contains a building number. A student starts from a given building and wants to reach a target building.
+
+The student can move to any of the 8 adjacent buildings (up, down, left, right, and all four diagonal directions).
+
+The student can move from the current building to the next building only if the difference between their building numbers is exactly 1.
+
+Given the campus matrix, starting building number, and target building number, determine the minimum number of moves required to reach the target.
+
+If the target cannot be reached, print -1.
+
+Input Format
+
+First line contains two integers m and n.
+Next m lines contain m × n integers representing building numbers.
+Next line contains two integers: start and target.
+
+Output Format
+
+Print the minimum number of moves required to reach the target.
+
+Example
+
+Input:
+4 5
+1 2 3 8 9
+2 3 4 7 10
+3 4 5 6 11
+8 7 6 5 12
+1 6
+
+
+Output:
+5
+
+
+import java.util.*;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] s = sc.nextLine().split(",");
+        ArrayList<Integer> res = new ArrayList<>();
+        ArrayList<Integer> curr = new ArrayList<>();
+        if(!s[0].equals("null")){
+            curr.add(0);
+        }
+        while(!curr.isEmpty()){
+            int max = Integer.MIN_VALUE;
+            ArrayList<Integer> next = new ArrayList<>();
+            for(int idx:curr){
+                int val = Integer.parseInt(s[idx]);
+                if(val>max){
+                    max=val;
+                }
+            
+            int l=2*idx+1;
+            int r=2*idx+2;
+                if(l<s.length&&!s[l].equals("null")){
+                    next.add(l);
+                }
+                if(r<s.length&&!s[r].equals("null")){
+                    next.add(r);
+                }
+            }
+            res.add(max);
+            curr=next;
+        }
+        System.out.print(res);
+    }
+}
